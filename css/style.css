@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Mali:wght@200;400&family=Roboto&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #F1DFD4;
+}
+
+#header{
+    color: #483124;
+    max-width: 1490px;
+    height: 99px;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 46px;
+}
+
+#header #header-links a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#header #header-links #header-link-top a{
+    font-family: 'Roboto';
+    margin-top: auto;
+}
+
+#header #header-links #header-link-top img{
+    width: 32px;
+}
+
+#header #header-links #header-link-bottom{
+    font-family: 'Mali';
+}
+
+#header h1{
+    font-size: 36px;
+    font-family: 'Knewave';
+    margin-top: auto;
+}
+
+#header h1 a.home-button{
+    color: #483124;
+    text-decoration: none;
+}
+
+#header>img{
+    display: none;
+}
+
+#header #header-links{
+    display: flex;
+    text-align: right;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 584px;
+    align-items: end;
+}
+
+#header #header-links a{
+    color: #483124;
+    font-size: 20px;
+}
+
+#header #header-links #header-link-top,#header-link-bottom{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#header #header-links #header-link-top{
+    width: 228px;
+}
+
+#body{
+    max-width: 1490px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #483124;
+    font-family: 'Mali';
+}
+
+#body h3{
+    font-size: 32px;
+    margin-top: 70px;
+}
+
+#coffee-group,#tea-group{
+    display: flex;
+    width: 100%;
+    padding-top: 28px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 42px;
+}
+
+.item-card{
+    min-width: 362px;
+    height: 470px;
+    border: 1px solid #483124;
+    text-align: center;
+}
+
+.item-card img,p,button{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item-card img{
+    margin-top: 28px;
+    margin-bottom: 26px;
+    width: 160px;
+    height: 268px;
+    object-fit: cover;
+}
+
+.item-card p{
+    color: #483124;
+    font-size: 24px;
+}
+
+.item-card button{
+    margin-top: 9px;
+    color: white;
+    background-color: #483124;
+    width: 154px;
+    height: 54px;
+    border: none;
+    font-size: 20px;
+    font-family: 'Mali';
+    cursor: pointer;
+}
+
+.item-card p.item-name{
+    font-weight: 400;
+}
+
+.item-card p.item-price{
+    font-weight: 700;
+}
+
+.item-card .item-price::before{
+    content: "From ";
+    font-size: 15px;
+    font-weight: 400;
+}
+
+hr{
+    margin-top: 62px;
+    border-color: #483124;
+}
+
+#footer{
+    position: relative;
+    bottom: 0px;
+    background-color: #483124;
+    min-height: 456px;
+    text-align: center;
+    font-family: 'Mali';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 93px;
+}
+
+#footer a,p.footer-copy-right,h2{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#footer h2{
+    font-family: 'Knewave', cursive;
+    font-size: 64px;
+}
+
+#footer #footer-chunk{
+    width: 1169px;
+    min-height: 108px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#footer #footer-chunk #footer-links-container{
+    min-width: 669px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer #footer-chunk #footer-links-container .link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+#footer a#back-to-top{
+    margin-top: 16px;
+}
+
+#footer p.footer-copy-right{
+    margin-bottom: 70px;
+}
+
+@media (max-width: 430px) {
+    #header{
+        width: 370px;
+        margin-top: 0;
+    }
+
+    #header #header-links{
+        display: none;
+    }
+
+    #body h3{
+        margin-left: 25px;
+    }
+    #header svg{
+        fill: #483124;
+    }
+    #header img{
+        display: inline-block;
+        width: 60px;
+        margin-top: auto;
+    }
+
+    #coffee-group,#tea-group {
+        justify-content: center;
+    }
+    #footer #footer-chunk{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        margin: 50px auto 50px auto;
+    }
+    #footer #footer-chunk #footer-links-container{
+        min-width: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+        margin: auto;
+    }
+
+    #footer #footer-chunk #footer-links-container .link{
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+    }
+}
