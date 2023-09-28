@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaffeenitea</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/item_page_body.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
     <div name="header" id="header">
@@ -27,7 +29,59 @@
         </div>
     </div>
     <div name="body" id="body">
-        <h3>Coffees</h3>
+        <div id="item-order-detail">
+            <div id="item-photo">
+                <img src="images/Mocha Frappe.jpg" alt="Mocha Frappe" id="item-preview">
+            </div>
+            <div id="item-purch-detail-container">
+                <h2>Mocha Frappe</h2>
+                <p id="curr-price">110.00</p>
+                <div id="item-purch-details">
+                    <label for="size" id="size-label">Size</label>
+                    <select name="size" id="size">
+                        <option value="Regular">Regular</option>
+                        <option value="Large">Large</option>
+                        <option value="Extra Large">Extra Large</option>
+                    </select>
+                    <label for="qty" id="qty">Quantity</label>
+                    <div>
+                        <button id="dec-qty">-</button>
+                        <span id="item-amount">1</span>
+                        <button id="inc-qty">+</button>
+                    </div>
+                    <div id="add-buy-button-container">
+                        <button id="add-to-cart-btn">Add to Cart</button>
+                        <button id="buy-btn">Buy</button>
+                    </div>
+                    <div id="item-desc-container">
+                        <h3 id="item-desc-header">Mocha Frappe</h3>
+                        <p id="item-desc">A balanced mix of Arabica Coffee, Belgian Chocolate, and Vanilla.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h3>Teas</h3>
+        <div id="reco-container">
+            <div class="item-card">
+                <img src="images/Matcha Frappe.jpg" alt="">
+                <p class="item-name">Matcha Frappe</p>
+                <p class="item-price">P 150.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="item-card">
+                <img src="images/Butterfly Pea.jpg" alt="">
+                <p class="item-name">Butterfly Pea Frappe</p>
+                <p class="item-price">P 80.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+            <div class="item-card">
+                <img src="images/HIbiscus.jpg" alt="">
+                <p class="item-name">Hibiscus Frappe</p>
+                <p class="item-price">P 80.00</p>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
     </div>
     <div name="footer" id="footer">
         <a href="#header" id="back-to-top">Back to top ⇧</a>
@@ -52,4 +106,5 @@
         <p class="footer-copy-right">Copyright © 2023 Kaffeenitea</p>
     </div>
 </body>
+<script src="JS/itempage.js"></script>
 </html>
