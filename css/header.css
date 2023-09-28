@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Mali:wght@200;400&family=Roboto&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #F1DFD4;
+}
+
+#header{
+    color: #483124;
+    max-width: 1490px;
+    height: 99px;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 46px;
+}
+
+#header #header-links a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#header #header-links #header-link-top a{
+    font-family: 'Roboto';
+    margin-top: auto;
+}
+
+#header #header-links #header-link-top img{
+    width: 32px;
+}
+
+#header #header-links #header-link-bottom{
+    font-family: 'Mali';
+}
+
+#header h1{
+    font-size: 36px;
+    font-family: 'Knewave';
+    margin-top: auto;
+}
+
+#header h1 a.home-button{
+    color: #483124;
+    text-decoration: none;
+}
+
+#header>img{
+    display: none;
+}
+
+#header #header-links{
+    display: flex;
+    text-align: right;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 584px;
+    align-items: end;
+}
+
+#header #header-links a{
+    color: #483124;
+    font-size: 20px;
+}
+
+#header #header-links #header-link-top,#header-link-bottom{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#header #header-links #header-link-top{
+    width: 228px;
+}

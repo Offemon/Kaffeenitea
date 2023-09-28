@@ -1,0 +1,104 @@
+#footer{
+    position: relative;
+    bottom: 0px;
+    background-color: #483124;
+    min-height: 456px;
+    text-align: center;
+    font-family: 'Mali';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 93px;
+}
+
+#footer a,p.footer-copy-right,h2{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#footer h2{
+    font-family: 'Knewave', cursive;
+    font-size: 64px;
+}
+
+#footer #footer-chunk{
+    width: 1169px;
+    min-height: 108px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+#footer #footer-chunk #footer-links-container{
+    min-width: 669px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer #footer-chunk #footer-links-container .link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+#footer a#back-to-top{
+    margin-top: 16px;
+}
+
+#footer p.footer-copy-right{
+    margin-bottom: 70px;
+}
+
+@media (max-width: 430px) {
+    #header{
+        width: 370px;
+        margin-top: 0;
+    }
+
+    #header #header-links{
+        display: none;
+    }
+
+    #header svg{
+        fill: #483124;
+    }
+    #header img{
+        display: inline-block;
+        width: 60px;
+        margin-top: auto;
+    }
+
+    
+    #body h3{
+        margin-left: 25px;
+    }
+
+    #coffee-group,#tea-group {
+        justify-content: center;
+    }
+    #footer #footer-chunk{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        margin: 50px auto 50px auto;
+    }
+    #footer #footer-chunk #footer-links-container{
+        min-width: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+        margin: auto;
+    }
+
+    #footer #footer-chunk #footer-links-container .link{
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+    }
+}
