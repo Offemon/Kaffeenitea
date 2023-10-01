@@ -33,10 +33,11 @@ img#item-preview{
 
 #body #item-order-detail #item-purch-detail-container h2,p,label{
     color: #483124;
+    font-weight: 400;
 }
 
 #body #item-order-detail #item-purch-detail-container h2{
-    color: #483124;
+    font-size: 36px;
 }
 
 #body #item-order-detail #item-purch-detail-container p#curr-price{
@@ -51,26 +52,106 @@ img#item-preview{
 #body #item-order-detail #item-purch-detail-container #item-purch-details{
     display: flex;
     flex-direction: column;
-    gap: 32px;
-    background-color: blue;
+    gap: 15px;
+    border: 1px solid #483124;
 }
 
+#body #item-order-detail #item-purch-detail-container #item-purch-details #item-actions-container{
+    width: 415px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#body #item-order-detail #item-purch-detail-container #item-purch-details #item-actions-container #size{
+    width: 152px;
+    height: 52px;
+    font-family: 'Roboto';
+    font-size: 32px;
+}
+
+/* Decrease - Increase Item QTY section */
+#body #item-order-detail #item-purch-detail-container #item-purch-details #item-actions-container #dec-inc-qty-container{ 
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    border: 1px solid #483124;
+}
+
+#body #item-order-detail #item-purch-detail-container #item-purch-details #item-actions-container #dec-inc-qty-container button,span{ 
+    height: 50px;
+    width: 50px;
+    font-family: 'Roboto';
+    font-size: 40px;
+    border:none;
+    background-color: white;
+    color: #483124;
+}
+
+#body #item-order-detail #item-purch-detail-container #item-purch-details #item-actions-container #dec-inc-qty-container span#item-amount{ 
+    display: block;
+    width: 50px;
+    text-align: center;
+}
+
+#body #item-order-detail #item-purch-detail-container #item-purch-details #item-actions-container label{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Roboto';
+}
+
+
+/* Add to cart and Buy Button Section */
+#body #item-order-detail #item-purch-detail-container #item-purch-details #item-actions-container #add-buy-button-container{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+}
+
+#body #item-order-detail #item-purch-detail-container #item-purch-details #item-actions-container #add-buy-button-container button{
+    width: 187px;
+    height: 72px;
+    font-family: 'Mali';
+    font-size: 24px;
+    margin: 0;
+    border: 1px solid #483124;
+    cursor: pointer;
+}
+
+#body #item-order-detail #item-purch-detail-container #item-purch-details #item-actions-container #add-buy-button-container #add-to-cart-btn{
+    background-color: white;
+}
+
+#body #item-order-detail #item-purch-detail-container #item-purch-details #item-actions-container #add-buy-button-container #buy-btn{
+    background-color: #483124;
+    color: white;
+}
+
+
+/* Item Description section */
 #body #item-order-detail #item-purch-detail-container #item-purch-details #item-desc-container{
     width: 484px;
     margin-left: auto;
     margin-right: auto;
-    background-color: red;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 #body #item-order-detail #item-purch-detail-container #item-purch-details #item-desc-container h3{
     margin-top: 0;
     font-size: 32px;
+    font-weight: 700;
 }
 
 #body #item-order-detail #item-purch-detail-container #item-purch-details #item-desc-container p{
     font-size: 24px;
+    font-weight: 400;
 }
 
+
+/* Recommended items section */
 #reco-container{
     display: flex;
     width: 100%;
@@ -137,6 +218,8 @@ hr{
     border-color: #483124;
 }
 
+
+/* media queries section */
 @media (max-width: 430px) {
     #body h3{
         margin-left: 25px;
