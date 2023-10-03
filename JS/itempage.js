@@ -8,7 +8,7 @@ let currPrice = document.getElementById("curr-price");
 let basePrice = Number(currPrice.innerText);
 
 const totalCost = () =>{
-    return ((costBySize(sizeDropDown.value)*Number(itemAmount.innerText)).toFixed(2));
+    return costBySize(sizeDropDown.value)*Number(itemAmount.innerText);
 }
 
 const costBySize = (size) =>{
@@ -36,7 +36,7 @@ const costBySize = (size) =>{
 }
 
 const updateCost = () =>{
-    currPrice.innerText = totalCost();
+    currPrice.innerText = totalCost().toLocaleString(undefined,{minimumFractionDigits: 2, maximumFractionDigits: 2});
     // I dont know how to .toLocaleString() works!
 }
 
