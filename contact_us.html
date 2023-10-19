@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaffeenitea</title>
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/about_us_body.css">
+    <link rel="stylesheet" href="css/contact_us_body.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
@@ -29,26 +29,37 @@
         </div>
     </div>
     <div name="body" id="body">
-        <div class="welcome-faqs-wrapper">
-            <div id="welcome-wrapper">
-                <h2>Welcome to <span class="shop-name">Kaffeenitea</span> !</h2>
-                <p>At Kaffeenity, we are passionate about crafting a cup of cold or hot cup of coffee and tea. Our journey began in 2025, and since then, we’ve been on a mission to create a haven for coffee and tea enthusiasts in our city.</p>
-                <p>What set us apart? It’s our commitment to quality, innovation, and the cozy atmosphere we provide for our valued customers. Our team of experienced baristas and tea sommeliers have dedicated themselves to mastering the art of brewing, ensuring that every sip you take is a delightful experience.</p>
+        <div id="contact-chunk">
+            <h2>Contact Us</h2>
+            <div id="contact-input-details-container">
+                <div id="inputs-container">
+                    <label for="name" class="input-label">Your name</label>
+                    <input type="text" name="name" id="name" placeholder="Your name">
+                    <label for="email" class="input-label">Your email</label>
+                    <input type="email" name="email" id="email" placeholder="Your email">
+                    <label for="message" class="input-label">Your name</label>
+                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Your message"></textarea>
+                </div>
+                <div id="details-container">
+                    <div>
+                        <p>Email</p>
+                        <p>Kaffeeniteaofficial@some.com</p>
+                    </div>
+                    <div>
+                        <p>Phone</p>
+                        <p>09123456789 | 0998654321</p>
+                    </div>
+                    <div>
+                        <p>Address</p>
+                        <p>152 BF Resort Drive, Las Pinas City</p>
+                    </div>
+                    <div>
+                        <p>Socials</p>
+                        <img src="images/facebook-svgrepo-com.svg" alt=""><img src="images/instagram-167-svgrepo-com.svg" alt="">
+                    </div>
+                </div>
             </div>
-            <hr>
-            <div id="faqs-wrapper">
-                <h2>FAQs</h2>
-                <h3>Where are your other branches?</h3>
-                <p>We currently only have one branch but we will eventually branch out within the city.</p>
-                <h3>Do you only sell Teas and Coffees?</h3>
-                <p>As of now, we only have those two categories of beverages. Rest assured that we will add more drinks on the menu.</p>
-                <h3>What are your store hours?</h3>
-                <p>Our store is open from 9AM to 7PM on Monday to Saturday.</p>
-                <h3>Do you do Deliveries?</h3>
-                <p>Yes but only within our city.</p>
-                <h3>What payment methods do you accept?</h3>
-                <p>We currently accept Credit/Debit cards and GCash</p>
-            </div>
+            <button id="send-message-btn">Send Message</button>
         </div>
     </div>
     <div name="footer" id="footer">

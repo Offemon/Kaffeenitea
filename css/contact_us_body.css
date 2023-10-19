@@ -1,0 +1,108 @@
+#body{
+    margin-top: 140px;
+    margin-bottom: 150px;
+}
+
+#contact-chunk{
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact-chunk h2{
+    font-family: 'Knewave';
+    font-size: 30px;
+    color: #483124;
+
+}
+
+#contact-input-details-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact-input-details-container #inputs-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#contact-input-details-container #inputs-container input,textarea{
+    border-radius: 10px;
+    border: none;
+    color: #483124;
+    font-size: 30px;
+    font-family: 'Mali';
+    font-weight: bold;
+    padding: 10px;
+    width: 400px;
+    resize: none;
+}
+
+::placeholder{
+    color: #4831243b;
+}
+
+label{
+    display: none;
+}
+
+#details-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#details-container div p:first-child{
+    font-family: 'Mali';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#details-container div p{
+    font-family: 'Roboto';
+    color: #483124;
+    font-size: 15px;
+}
+
+#details-container img{
+    width: 25px;
+    height: auto;
+}
+
+#send-message-btn{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #483124;
+    font-size: 30px;
+    font-family: 'Mali';
+    color: white;
+    width: 420px;
+}
+
+@media (max-width: 430px){
+    #contact-chunk{
+        max-width: 300px;
+    }
+    #contact-input-details-container #inputs-container{
+        align-items:center;
+    }
+    #contact-input-details-container #inputs-container input,textarea{
+        width: 280px;
+    }
+
+    #contact-input-details-container{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    #details-container{
+        height: 250px;
+    }
+    #send-message-btn{
+        width: 300px;
+        margin: auto;
+    }
+}
